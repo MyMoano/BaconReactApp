@@ -75,7 +75,6 @@ var Weather = React.createClass({
     //listeners to stores
     _onChange: function() {
     	this.setState({weather: WeatherStores.getAll()});
-    	console.log("Weather > _onChange");
       }    
   
 });
