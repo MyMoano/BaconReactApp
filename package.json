@@ -1,0 +1,33 @@
+{
+  "name": "bacon-react-app-template",
+  "version": "0.0.1",
+  "description": "template app with react and bacon",
+  "main": "js/app.js",
+  "dependencies": {
+    "react": "latest",
+    "underscore": "latest",
+    "keymirror": "latest",    
+    "baconjs": "latest",
+    "superagent": "latest",    
+    "immutable": "latest",
+    "moment":"latest"
+  },
+  "devDependencies": {
+    "browserify": "~6.2.0",
+    "envify": "~3.0.0",
+    "react": "0.12.x",
+    "reactify": "^0.15",
+    "watchify": "~2.1.0"
+  },
+  "scripts": {
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "browserify . > js/bundle.min.js"
+  },
+  "author": "Ken Wheeler",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}

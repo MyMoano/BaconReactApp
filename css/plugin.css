@@ -1,0 +1,55 @@
+/*Timeline -----------------------------------*/
+
+.timeline{
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+  table-layout: fixed;
+  position: relative;
+  border-collapse: collapse;
+}
+.timeline:before{
+  content: "";
+  width: 6px;
+  margin-left: -4px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 30px;
+  background-color: #ddd;
+  z-index: 0;
+}
+.timeline-item{display: table-row;}
+.timeline-caption{
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.timeline-item:before, .timeline-item.alt:after{
+  content: "";
+  display: block;
+  width: 50%;
+}
+.timeline-item.alt:before{display: none}
+.timeline-item .panel{padding: 15px}
+.timeline-date{position: absolute;width: 150px;left: -200px;top: 3px;text-align: right;}
+.timeline-icon{position: absolute;left: -41px;top: -2px;}
+.time-icon{width: 30px;height: 30px;display:inline-block !important;z-index: 10;border:2px solid #fff;border-radius: 20px;text-align: center;background-color: #898989}
+.time-icon:before{font-size: 16px;margin-top: 5px;color: #fff}
+.timeline-caption .panel{display: inline-block;position: relative;margin-left: 25px;position: relative;text-align: left;}
+.timeline-item.alt{text-align: right;}
+.timeline-item.alt .panel{margin-right: 25px;margin-left: 0}
+.timeline-item.alt .timeline-date{left: auto;right: -200px;text-align: left;}
+.timeline-item.alt .timeline-icon{left: auto;right: -41px;}
+.timeline-caption h5{margin:0}
+.timeline-caption h5 span{display: block;color: #999;margin-bottom: 4px;font-size: 12px}
+.active .timeline-caption h5 span{color: #fff}
+.timeline-item.active{display: table-caption;text-align: center;}
+.timeline-item.active:before{width: 1%}
+.active .timeline-caption{display: inline-block;width: auto;}
+.timeline-item.active .panel{margin-left: 0}
+.active .timeline-date, .active .timeline-icon{position: static;margin-bottom:10px;display: inline-block;width: auto;}
+.timeline-caption p{font-size: 12px;margin-bottom: 0;margin-top: 10px;}
+.timeline-footer{display: table-row;}
+.timeline-footer a{display: table-cell;text-align: right;}
+.timeline-footer .time-icon{margin-right: -15px;z-index: 5}
