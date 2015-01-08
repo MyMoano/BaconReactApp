@@ -1,6 +1,6 @@
 /**
  * New node file 
- * C:\Users\d1604\AppData\Roaming\npm\browserify .  > js/bundle.js
+ * 
  */
 
 //Components dependencies -------
