@@ -1,1 +1,15 @@
 README REACT BACON APP
+
+
+This app explains how to use React.js with Bacon.js to connect stores, views and actions modules.
+it complements Flux vision (http://facebook.github.io/flux/docs/overview.html) by utilizing a unidirectional data flow 
+with Bacon.js and adding a service module to separate  externals data (API calls) to Stores.
+
+Structure and Data Flow :
+
+  | Services | --> |Dispatch| --> | Stores | --> |dispatch| --> |Views|
+                       |                                           |
+                       <--------------------------------------------
+
+
+Im not a great developer. So be lenient. :)
